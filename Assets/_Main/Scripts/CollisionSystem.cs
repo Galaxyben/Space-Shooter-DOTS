@@ -58,13 +58,11 @@ namespace SpaceShooter
 
                 if (isBodyAAsteroid && isBodyBAsteroid)
                 {
-                    Debug.Log("Collide asteroid con asteroid");
                     return;
                 }
 
                 if(isBodyAPlayer && !isBodyBAsteroid || !isBodyAAsteroid && isBodyBPlayer)
                 {
-                    Debug.Log("Se encontro al jugador");
                     return;
                 }
                 else //If player crashed with an asteroid
@@ -76,7 +74,6 @@ namespace SpaceShooter
 
                 if ((isBodyAAsteroid && !isBodyBBullet) || (isBodyBAsteroid && !isBodyABullet))
                 {
-                    Debug.Log("Collide de asteroid con NO bala");
                     return;
                 }
 

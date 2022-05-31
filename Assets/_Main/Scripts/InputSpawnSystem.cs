@@ -36,7 +36,6 @@ namespace SpaceShooter
             }
 
             var commandBuffer = m_BeginSimECB.CreateCommandBuffer().AsParallelWriter();
-            //We must declare our local variables before the .ForEach()
             var gameSettings = GetSingleton<GameSettingsComponent>();
             var bulletPrefab = m_BulletPrefab;
 
