@@ -18,7 +18,7 @@ namespace SpaceShooter
 
             Entities
                 .WithoutBurst()
-                .WithName("Player")
+                .WithAll<PlayerTag>()
                 .ForEach((ref Translation translation, ref Rotation rotation, ref Player player) =>
                 {
                     if(Input.GetKey(player.forwardInput))
